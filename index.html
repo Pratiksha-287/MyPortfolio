@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <img src="profile.jpg" alt="Profile Picture"/>
+        <h2>Welcome!</h2>
+        <h3>I'm <span class="highlight">Pratiksha Singh</span>, a Passionate Developer</h3>
+        <p>
+            Currently pursuing a B.Tech in Computer Science from SRMCEM, Lucknow, 
+            I am driven by a passion for transforming concepts into reality and 
+            creating innovative applications. My journey in tech is fueled by curiosity and a desire to learn.
+        </p>
+        <p>I'm excited about exploring new technologies and collaborating on projects that make a difference. 
+            Let's connect and create something amazing together!</p>
+        <button onclick="showModal()">See My Projects</button>
+        <div class="skills">
+            <h4>My Skills:</h4>
+            <div class="skill">
+                <span class="skill-name">HTML/CSS</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">JavaScript</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Python</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>My Projects</h2>
+            <ul>
+                <li><strong>Project 1:</strong> CRACK-THE-CODE: A simple JavaScript guessing game.</li>
+                <li><strong>Project 2:</strong> MY_CALCULATOR: A basic calculator for arithmetic operations.</li>
+                <li><strong>Project 3:</strong> CHAT-APP: A real-time group chat application using django, enable users to create and join chat rooms for instant messaging.</li>
+                <li><strong>Project 4:</strong> BLOGGING PLATFORM: Developed a blogging site using django, enabling users to create , manage, and interact with blog posts.</li>
+                <li><strong>Project 5:</strong> FILLKART: A lightweight, responsive e-commerce website.</li>
+            </ul>
+        </div>
+    </div>
+<div class="contact-section">
+    <h4>Contact Me</h4>
+    <p>email :  pratikshasingh923@gmail.com <br>
+      phone  :  8789638723
+    </p>
+    <button><a href="https://www.linkedin.com/in/pratiksha-singh-3b134b24b/?originalSubdomain=in" class="linkedin">Connect on LinkedIn</a></button>
+</div>
+</body>
+</html>
