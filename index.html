@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
 </head>
 <body>
     <div class="container">
@@ -31,32 +33,50 @@
             </div>
             <div class="skill">
                 <i class="fab fa-js icon"></i>
-                <span class="skill-name">JavaScript</span>
+                <span class="skill-name">JAVASCRIPT</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-react icon"></i>
+                <span class="skill-name">REACT</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+            </div>
+
+
+            <div class="skill">
+                <i class="fab fa-python icon" style="flex: 0 0 9%;"></i>
+                <span class="skill-name">PYTHON</span>
                 <div class="progress">
                     <div class="progress-bar" style="width: 60%;"></div>
                 </div>
             </div>
             <div class="skill">
-                <i class="fab fa-python icon" style="flex: 0 0 9%;"></i>
-                <span class="skill-name">Python</span>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 70%;"></div>
-                </div>
-            </div>
-            <div class="skill">
                 <i class="fab fa-solid fa-mug-hot icon " style="flex: 0 0 11.5%;"></i>
-                <span class="skill-name">Java </span>
+                <span class="skill-name">JAVA </span>
                 <div class="progress">
                     <div class="progress-bar" style="width: 65%;"></div>
                 </div>
             </div>
             <div class="skill">
                 <i class="fas fa-code icon" style="flex: 0 0 9%;"></i>
-                <span class="skill-name">Django</span>
+                <span class="skill-name">DJANGO</span>
                 <div class="progress">
                     <div class="progress-bar" style="width: 55%;"></div>
                 </div>
             </div>
+
+            <div class="skill">
+                <i class="fas fa-database icon" style="flex: 0 0 9%;"></i>
+                <span class="skill-name">SQL</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+            </div>
+
         </div>
         <h4>My Tech Stack:</h4>
         <div class="carousel">
@@ -67,6 +87,7 @@
             <div class="carousel-item"><i class="fab fa-python icon"></i><p>Python</p></div>
             <div class="carousel-item"><i class="fas fa-code icon"></i><p>Django</p></div>
             <div class="carousel-item"><i class="fab fa-github icon"></i><p>GitHub</p></div>
+            <div class="carousel-item"><i class="fas fa-database icon"></i><p>SQL</p></div>
         </div>
     </div>
     <!-- Modal -->
@@ -75,21 +96,56 @@
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>My Projects</h2>
             <ul>
-                <li><strong>Project 1:</strong> CRACK-THE-CODE: A simple JavaScript guessing game.</li>
-                <li><strong>Project 2:</strong> MY_CALCULATOR: A basic calculator for arithmetic operations.</li>
-                <li><strong>Project 3:</strong> CHAT-APP: A real-time group chat application using django, enable users to create and join chat rooms for instant messaging.</li>
-                <li><strong>Project 4:</strong> BLOGGING PLATFORM: Developed a blogging site using django, enabling users to create , manage, and interact with blog posts.</li>
-                <li><strong>Project 5:</strong> FILLKART: A lightweight, responsive e-commerce website.</li>
+                <li><strong>Project 1:</strong> 🏋️‍♂️ Health Challenge Tracker: Health Challenge Tracker is a simple React-based application that allows users to log their workouts, filter them based on type, and track workout minutes. It also supports pagination and stores data in localStorage to persist across page refreshes.
+                    <ul>Features
+                    <li>Add workouts with user name, workout type, and duration (in minutes).
+                    <li>Display all workouts in a table format.
+                    <li>Filter workouts by type.
+                    <li>Search for workouts by user name.
+                    <li>Paginate through the list of workouts.
+                    <li>Aggregate workouts by user (entries with the same name are merged).
+                    Store workouts in localStorage to persist data.</ul></li>
+
+                <li><strong>Project 2:</strong> 🗓️Dynamic Event Calendar: The Dynamic Event Calendar is a feature-rich, responsive scheduling tool designed for seamless event management. It offers a monthly view with easy navigation, highlighting the current day. Users can add, edit, and delete events, specifying details like name, time, description, and type (Work/Personal/Other), with real-time conflict detection to prevent overlaps. The drag-and-drop functionality allows effortless rescheduling while ensuring automatic updates for data consistency. Events can be exported as JSON or CSV, making sharing and analysis convenient. With local storage, events persist across sessions, and its fully responsive design ensures a smooth experience on both desktop and mobile devices.</li>
+
+                <li><strong>Project 3:</strong> 💬CHAT-APP: This project is a real-time chat application built with Django, allows users to create and join chat rooms. Messages are updated in real-time using AJAX polling to simulate live messaging. Key components include: Models for Room and Message storage. Views that handle room creation, message sending, and retrieving messages.<br>
+                    Tech Stack
+                    Backend: Django
+                    Frontend: HTML, CSS, JavaScript (jQuery)
+                    Database: SQLite (default in Django)</li>
+
+                <li><strong>Project 4:</strong> BLOGGING PLATFORM: This is a personal blog site where I share my journey in the tech world, experiences, and thoughts. As a fun-loving and adventurous computer science major, I aim to explore various topic in technology while connecting with readers.
+                    <ul>Features: 
+                    <li>User-friendly interface <li> Responsive design for mobile and desktop <li> Blog posts with images <li> About me section <li> Contact page for inquiries</ul>
+                    Technologies Used: 
+                    Python
+                    Django
+                    HTML/CSS Bootstrap
+                    SQLite (or any database of your choice)</li>
+                <li><strong>Project 5:</strong> 🛒FILLKART: I’m currently working on an e-commerce website project with a friend, utilizing HTML, CSS, and JavaScript. The goal is to create a seamless shopping experience while leveraging local storage for data management.
+
+                    The website consists of three main pages: the Product Listing Page, Cart Page, and Profile Page. Each page is designed to enhance user interaction and provide a smooth navigation experience.</li>
             </ul>
         </div>
     </div>
-<div class="contact-section">
-    <h4>Contact Me</h4>
-    <p>email :  pratikshasingh923@gmail.com <br>
-      phone  :  8789638723
-    </p>
-    <button><a href="https://www.linkedin.com/in/pratiksha-singh-3b134b24b/?originalSubdomain=in" class="linkedin">Connect on LinkedIn</a></button>
-</div>
+    <div class="contact-section">
+        <h4>Contact Me</h4>
+        <p>Email: pratikshasingh923@gmail.com <br>
+           Phone: 8789638723
+        </p>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+            <p id="form-message"></p>
+        </form>
+        <button>
+            <a href="https://www.linkedin.com/in/pratiksha-singh-3b134b24b/?originalSubdomain=in" class="linkedin">
+                Connect on LinkedIn
+            </a>
+        </button>
+    </div>
 <script src="script.js"></script>
 </body>
 </html>

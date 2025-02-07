@@ -19,3 +19,25 @@
                 }, 100);
             });
         };
+
+        (function(){
+            emailjs.init("WQA_tzipDZPY57cVc"); // Replace with your EmailJS public key
+        })();
+    
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+    
+            const formMessage = document.getElementById("form-message");
+            formMessage.textContent = "Sending...";
+            formMessage.style.color = "#ffffff";
+    
+            emailjs.sendForm("service_npul4fi", "template_dt3xs51", this)
+            .then(response => {
+                formMessage.textContent = "Message sent successfully!";
+                formMessage.style.color = "lightgreen";
+                this.reset();
+            }, error => {
+                formMessage.textContent = "Failed to send message. Try again!";
+                formMessage.style.color = "red";
+            });
+        });

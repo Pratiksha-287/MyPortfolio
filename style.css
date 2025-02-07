@@ -28,3 +28,38 @@
         @media (max-width: 600px) {
             .container img { width: 80%;}
         }
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .contact-section input, .contact-section textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #8e44ad;
+            border-radius: 5px;
+            background: #4a4e69;
+            color: #ffffff;
+            font-size: 14px;
+        }
+        
+        .contact-section input::placeholder, 
+        .contact-section textarea::placeholder {
+            color: #bbb;
+        }
+        
+        .contact-section button {
+            background: #8e44ad;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        
+        .contact-section button:hover {
+            background: #732d91;
+        }
+        
